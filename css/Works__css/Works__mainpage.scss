@@ -1,0 +1,67 @@
+@use '../common__scss/body';
+@use '../common__scss/header';
+@use '../common__scss/Contact';
+@use '../common__scss/footer';
+
+
+/*
+================================================================
+Works
+================================================================
+*/
+
+.Works ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 120px;
+
+}
+
+
+
+.Works ul  li a{
+    cursor: pointer;
+    height: 120px;
+    width: 100%;
+    display: inline-block;
+    &:hover{
+        opacity: .8;
+    }
+}
+
+
+
+
+li p{
+    text-align: center;
+}
+
+
+.Works ul li img{
+    padding-bottom: 30px;
+}
+
+/*
+================================================================
+sp 
+================================================================
+*/
+
+@media screen and(max-width:500px) {
+
+.Works ul{
+    grid-template-columns: 100%;
+    text-align: center;
+    row-gap:60px;
+}
+
+.Works ul li img{
+    height:auto;
+    width: 100%;
+} 
+
+
+
+
+}
