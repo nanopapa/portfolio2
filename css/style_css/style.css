@@ -433,7 +433,8 @@ li p {
 }
 
 .Works ul li img {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #eff4f6;
 }
 
 /*

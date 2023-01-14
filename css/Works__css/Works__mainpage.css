@@ -349,10 +349,13 @@ Works
        column-gap: 40px;
   row-gap: 120px;
 }
+.Works ul li img {
+  border: 1px solid #eff4f6;
+}
 
 .Works ul li a {
   cursor: pointer;
-  height: 120px;
+  height: auto;
   width: 100%;
   display: inline-block;
 }
@@ -362,10 +365,6 @@ Works
 
 li p {
   text-align: center;
-}
-
-.Works ul li img {
-  padding-bottom: 30px;
 }
 
 /*
