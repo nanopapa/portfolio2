@@ -10,7 +10,7 @@
     <link rel="preconnect" href="<?php echo get_template_directory_uri(); ?>https://fonts.googleapis.com">
     <link rel="preconnect" href="<?php echo get_template_directory_uri(); ?>https://fonts.gstatic.com" crossorigin>
     <link href="<?php echo get_template_directory_uri(); ?>https://fonts.googleapis.com/css2?family=Unna:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./images/Top__img/R.png">
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>./images/Top__img/R.png">
     <title><?php bloginfo('Ryohei Portfolio'); ?></title>
     <?php wp_head(); ?>
 </head>
@@ -30,7 +30,7 @@
                         <ul>
                             <li><a href="#">Home</a></li>
                             <li><a href="#">Service</a></li>
-                            <li><a href="#">About</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/about/')); ?>">About</a></li>
                             <li><a href="#">Works</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
