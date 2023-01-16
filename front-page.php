@@ -40,7 +40,7 @@ Service
         </ul>
 
     <div class="button__more">
-        <a href="#">詳しく見る</a>
+        <a href="<?php echo esc_url(home_url('/service/')); ?>">詳しく見る</a>
     </div>
 
 </section>
@@ -71,7 +71,7 @@ AboutMe
         </div>
     </div>
     <div class="button__more">
-        <a href="#">詳しく見る</a>
+        <a href="<?php echo esc_url(home_url('/about/')); ?>">詳しく見る</a>
     </div>
 </div>
 </section>
@@ -126,7 +126,7 @@ Works
     </ul>
 
     <div class="button__more">
-        <a href="#">詳しく見る</a>
+        <a href="<?php echo esc_url(home_url('/works/')); ?>">詳しく見る</a>
     </div>
     </section>
 </div>
@@ -145,7 +145,7 @@ contact
     </p>
     <div class="wrapper">
         <div class="button__more ">
-            <a href="#">お問い合わせ</a>
+            <a href="<?php echo esc_url(home_url('/contact/')); ?>">お問い合わせ</a>
         </div>
     </div>
 </div>
