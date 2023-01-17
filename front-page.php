@@ -88,37 +88,37 @@ Works
 
     <ul>
         <li>
-            <a href="#">
+            <a href="<?php echo esc_url(home_url('/kindergarden/')); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>./images/Top__img/Works_Kindergarden.png" alt="幼稚園サイト画像">
                 <p>幼稚園サイト作成</p>
             </a>
             </li>
         <li>
-            <a href="#">
+            <a href="<?php echo esc_url(home_url('/sneakers/')); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>./images/Top__img/Works__Sneakers.png" alt="スニーカー専門店の画像">
                 <p>スニーカー専門店のサイト作成</p>
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="<?php echo esc_url(home_url('/profilesite/')); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>./images/Top__img/Works__ProfileSite.png" alt="プロフィールサイト画像">
                 <p>プロフィールサイト作成</p>
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="<?php echo esc_url(home_url('/dogrun/')); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>./images/Top__img/Works__Dogrun.png" alt="ドッグランサイト画像">
                 <p>ドッグランのサイト作成</p>
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="<?php echo esc_url(home_url('/officedesign/')); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>./images/Top__img/Works__Officedesign.png" alt="オフィスデザイン会社の画像">
                 <p>オフィスデザイン会社のサイト作成</p>
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="<?php echo esc_url(home_url('/cafe/')); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>./images/Top__img/Works__CoffieSite.png" alt="カフェのサイト画像">
                 <p>カフェのサイト作成</p>
             </a>
