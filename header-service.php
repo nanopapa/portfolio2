@@ -48,11 +48,11 @@
 <div class="sp__menu">
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="php echo home_url(); ">Home</a></li>
+            <li><a href="<?php echo esc_url(home_url('/service/')); ?>">Service</a></li>
+            <li><a href="<?php echo esc_url(home_url('/about/')); ?>">About</a></li>
+            <li><a href="<?php echo esc_url(home_url('/works/')); ?>">Works</a></li>
+            <li><a href="<?php echo esc_url(home_url('/contact/')); ?>">Contact</a></li>
         </ul>
     </nav>
 </div>
