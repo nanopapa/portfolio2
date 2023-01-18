@@ -1,4 +1,4 @@
-<?php get_header('Works-subpage'); ?>
+<?php get_header(); ?>
 <!--==============================================================
 Works
 ============================================================== -->
@@ -12,9 +12,9 @@ Works
     <div class="container">
         <div class="swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>./images/Works__img/Works__Officedesign.png" alt="オフィスデザイン会社　スライド画像1"></div>
-                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>./images/Works__img/Works__Officedesign02.png" alt="オフィスデザイン会社　スライド画像2"></div>
-                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>./images/Works__img/Works__Officedesign03.png" alt="オフィスデザイン会社　スライド画像33"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/Works__img/Works__Officedesign.png" alt="オフィスデザイン会社　スライド画像1"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/Works__img/Works__Officedesign02.png" alt="オフィスデザイン会社　スライド画像2"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/Works__img/Works__Officedesign03.png" alt="オフィスデザイン会社　スライド画像33"></div>
             </div>
         </div>
         <div class="swiper-button-prev"></div>
@@ -41,4 +41,4 @@ Works
 </div>
 
 <?php get_template_part('contact-part'); ?>
-<?php get_footer('Works-subpage'); ?>
+<?php get_footer(); ?>

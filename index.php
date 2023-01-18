@@ -23,17 +23,17 @@ Service
 
         <ul class="Service__list">
             <li>
-                <img src= "<?php echo get_template_directory_uri(); ?>./images/Top__img/Service__Webdesign.png" alt="Webデザイン画像">
+                <img src= "<?php echo get_template_directory_uri(); ?>/images/Top__img/Service__Webdesign.png" alt="Webデザイン画像">
                 <h3>Webデザイン</h3>
                 <p>1ページで完結するランディングページから、複数ページからなるコーポレートサイトまで幅広く制作致します。お客様から頂いた情報をもとに課題を解決できるデザインを提案し、制作致します。</p>
             </li>
             <li>
-                <img src="<?php echo get_template_directory_uri(); ?>./images/Top__img/Service__coding.png" alt="コーディング画像">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/Top__img/Service__coding.png" alt="コーディング画像">
                 <h3>コーディング</h3>
                 <p>作成したサイトの目的やデザインの意図に沿って適切なコーディングを行います。保守性、汎用性に優れたコーディングを心掛けています。</p>
             </li>
             <li>
-                <img src="<?php echo get_template_directory_uri(); ?>./images/Top__img/Service__WordPress.png" alt="WordPress画像">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/Top__img/Service__WordPress.png" alt="WordPress画像">
                 <h3>WordPress</h3>
                 <p>ホームページをWordPressで作成致します。お客様ご自身での運用や、記事の更新や投稿を簡単に行えるサイトを作成致します。</p>
             </li>
@@ -59,7 +59,7 @@ AboutMe
 
     <div class="AboutMe__introduction">
         <div class="AboutMe__img--left">
-            <img src="<?php echo get_template_directory_uri(); ?>./images/Top__img/AboutMe__img.png" alt="自己紹介、画像">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/Top__img/AboutMe__img.png" alt="自己紹介、画像">
         </div>
 
         <div class="AboutMe__text--right">
@@ -89,37 +89,37 @@ Works
     <ul>
         <li>
             <a href="#">
-                <img src="<?php echo get_template_directory_uri(); ?>./images/Top__img/Works_Kindergarden.png" alt="幼稚園サイト画像">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/Top__img/Works_Kindergarden.png" alt="幼稚園サイト画像">
                 <p>幼稚園サイト作成</p>
             </a>
             </li>
         <li>
             <a href="#">
-                <img src="<?php echo get_template_directory_uri(); ?>./images/Top__img/Works__Sneakers.png" alt="スニーカー専門店の画像">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/Top__img/Works__Sneakers.png" alt="スニーカー専門店の画像">
                 <p>スニーカー専門店のサイト作成</p>
             </a>
         </li>
         <li>
             <a href="#">
-                <img src="<?php echo get_template_directory_uri(); ?>./images/Top__img/Works__ProfileSite.png" alt="プロフィールサイト画像">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/Top__img/Works__ProfileSite.png" alt="プロフィールサイト画像">
                 <p>プロフィールサイト作成</p>
             </a>
         </li>
         <li>
             <a href="#">
-                <img src="<?php echo get_template_directory_uri(); ?>./images/Top__img/Works__Dogrun.png" alt="ドッグランサイト画像">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/Top__img/Works__Dogrun.png" alt="ドッグランサイト画像">
                 <p>ドッグランのサイト作成</p>
             </a>
         </li>
         <li>
             <a href="#">
-                <img src="<?php echo get_template_directory_uri(); ?>./images/Top__img/Works__Officedesign.png" alt="オフィスデザイン会社の画像">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/Top__img/Works__Officedesign.png" alt="オフィスデザイン会社の画像">
                 <p>オフィスデザイン会社のサイト作成</p>
             </a>
         </li>
         <li>
             <a href="#">
-                <img src="<?php echo get_template_directory_uri(); ?>./images/Top__img/Works__CoffieSite.png" alt="カフェのサイト画像">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/Top__img/Works__CoffieSite.png" alt="カフェのサイト画像">
                 <p>カフェのサイト作成</p>
             </a>
         </li>

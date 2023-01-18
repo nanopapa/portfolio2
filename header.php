@@ -5,25 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>./css/reset__css/reset.css">
-    
-    <?php if ( is_home() || is_front_page() ) : ?>
-    <link rel='stylesheet'href='<?php echo get_template_directory_uri(); ?>/style.css' type='text/css' />
-    <?php elseif(is_page('service')): ?>
-    <link rel='stylesheet'href='<?php echo get_template_directory_uri(); ?>./css/Service__css/Service.css' type='text/css' />
-    <?php elseif(is_page('about')): ?>
-    <link rel='stylesheet'href='<?php echo get_template_directory_uri(); ?>./css/about__css/About.css' type='text/css' />
-    <?php elseif(is_page('works')): ?>
-    <link rel='stylesheet'href='<?php echo get_template_directory_uri(); ?>./css/Works__css/Works__mainpage.css' type='text/css' />
-    <?php elseif(is_page('contact')): ?>
-    <link rel='stylesheet'href='<?php echo get_template_directory_uri(); ?>./css/Contact__css/Contact.css' type='text/css' />
-    <?php endif;?>
-
-    <!-- Unna font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Unna:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>./images/Top__img/R.png">
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/Top__img/R.png">
     <title><?php bloginfo('Ryohei Portfolio'); ?></title>
     <?php wp_head(); ?>
 </head>

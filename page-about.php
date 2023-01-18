@@ -2,7 +2,7 @@
 /*
 Template Name: About
 */
-get_header('about'); ?>
+get_header(); ?>
 
 <!--==============================================================
 About
@@ -14,7 +14,7 @@ About
                 <p>制作者について</p>
             </div>
             <div class="introduction">
-                <img src="<?php echo get_template_directory_uri(); ?>./images/About__img/About__img.png" alt="自己紹介画像">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/About__img/About__img.png" alt="自己紹介画像">
 
                 <div class="introduction__text">
                     <h3>高橋遼平<span>(たかはし りょうへい)</span></h3>
@@ -96,28 +96,28 @@ Skills
 
         <ul>
             <li>
-                <img src="<?php echo get_template_directory_uri(); ?>./images/About__img/Skills__HTML.png" alt="スキル、HTML">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/About__img/Skills__HTML.png" alt="スキル、HTML">
                 <div class="Skills__text">
                     <h3>HTML</h3>
                     <p>サイト全体を考慮しバランスの良いマークアップを心掛け、保守性、汎用性に優れたマークアップを心掛けています。</p>
                 </div>
             </li>
             <li>
-                <img src="<?php echo get_template_directory_uri(); ?>./images/About__img/Skills__CSS.png" alt="スキル、CSS">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/About__img/Skills__CSS.png" alt="スキル、CSS">
                 <div class="Skills__text">
                     <h3>CSS</h3>
                     <p>スマートフォンやタブレットなどの画面にも対応できるレスポンシブデザインにも対応致します。SCSSを使用し効率的なCSSを作成致します。</p>
                 </div>
             </li>
             <li>
-                <img src="<?php echo get_template_directory_uri(); ?>./images/About__img/Skills__JavaScript.png" alt="スキル、JavaScript">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/About__img/Skills__JavaScript.png" alt="スキル、JavaScript">
                 <div class="Skills__text">
                     <h3>JavaScript</h3>
                     <p>JavaScript(jQuery,DOM)を用いてサイトにスライダーやハンバーガーメニューの実装などを作成し、躍動感のあるサイトを作成致します。</p>
                 </div>
             </li>
             <li>
-                <img src="<?php echo get_template_directory_uri(); ?>./images/About__img/Skills__WordPress .png" alt="スキル、WordPress">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/About__img/Skills__WordPress .png" alt="スキル、WordPress">
                 <div class="Skills__text">
                     <h3>HTML</h3>
                     <p>サイト全体を考慮しバランスの良いマークアップを心掛け、保守性、汎用性に優れたマークアップを心掛けています。</p>
@@ -131,7 +131,7 @@ Skills
                 </div>
             </li>
             <li>
-                <img src="<?php echo get_template_directory_uri(); ?>./images/About__img/Skills__Figma.png" alt="スキル、Figma">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/About__img/Skills__Figma.png" alt="スキル、Figma">
                 <div class="Skills__text">
                     <h3>Figma</h3>
                     <p>ワイヤーフレーム作成に使用します。お客様から頂いた情報を基にサイトの設計図を作成し、お客様のイメージの摺り合わせを行います。</p>
