@@ -124,7 +124,7 @@ Skills
                 </div>
             </li>
             <li>
-                <img src="<?php echo get_template_directory_uri(); ?>./images/About__img/Skills__Photoshop.png" alt="スキル、Photoshop">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/About__img/Skills__Photoshop.png" alt="スキル、Photoshop">
                 <div class="Skills__text">
                     <h3>Photoshop</h3>
                     <p>主に画像の加工、編集などを行います。グラデーションを追加したり画像の切り抜きなども可能です。</p>
