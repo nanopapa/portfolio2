@@ -48,6 +48,7 @@ input,textarea{
 
         .submit__btn{
             text-align: center;
+
         }
         
         
@@ -65,6 +66,30 @@ input,textarea{
                 }
         }
 
+        // 確認画面フォーム用
+    .submit__btn button{
+        color: #fff;
+        width: 200px;
+        border-radius: 40px;
+        padding:20px;
+        text-align: center;
+        background-color:#66C2F4;
+        cursor: pointer;
+        border: none;
+        
+            &:hover{
+                opacity: .8;
+            }
+        }
+
+    
+    }
+.caution{
+        display: none;
+}
+
+.mw_wp_form_confirm .caution {
+        display: block;
     }
 
 

@@ -1,3 +1,13 @@
+@charset "UTF-8";
+/*
+Theme Name: ポートフォリオ　
+Theme URI: 
+Author: 高橋遼平
+Author URI: 
+Description: 高橋遼平のポートフォリオ
+Version: 
+License: 
+*/
 /* ================================================================
 body
 ================================================================ */
@@ -377,6 +387,27 @@ input, textarea {
 }
 .Contact__form .submit__btn input:hover {
   opacity: 0.8;
+}
+.Contact__form .submit__btn button {
+  color: #fff;
+  width: 200px;
+  border-radius: 40px;
+  padding: 20px;
+  text-align: center;
+  background-color: #66C2F4;
+  cursor: pointer;
+  border: none;
+}
+.Contact__form .submit__btn button:hover {
+  opacity: 0.8;
+}
+
+.caution {
+  display: none;
+}
+
+.mw_wp_form_confirm .caution {
+  display: block;
 }
 
 @media screen and (max-width: 960px) {
