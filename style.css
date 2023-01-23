@@ -390,6 +390,7 @@ Service
 
 .Service__list p {
   padding: 0 16px;
+  text-align: justify;
 }
 
 /*
@@ -414,6 +415,7 @@ AboutMe
 .AboutMe__text--right {
   width: 65%;
   padding-top: 20px;
+  text-align: justify;
 }
 
 /*
@@ -479,6 +481,10 @@ sp
   }
   .Service__list li img {
     width: 100%;
+  }
+
+  .Service__list p {
+    padding: 0 ;
   }
   .AboutMe__introduction {
     flex-direction: column;
