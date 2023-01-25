@@ -64,5 +64,63 @@ function my_scripts() {
     }
     mvwpform_autop_filter();
     
+
+
+    // カスタム投稿タイプ
+    function cpt_register_works(){
+      $labels=[
+        "singular_name" => "works",
+        "edit_item" => "works",
+      ];
+      $args=[
+        // サイドバーにworksを追加する
+        "label" => "Works",
+        "labels" => "$labels",
+        "description" => "",
+        "public" => true,
+        "show_in_rest" => true,
+        "rest_base" => "",
+        "rest_controller_class" => "WP_REST_Posts_Controller",
+        "has_archive" => true,
+        "delete_with_user" => false,
+        "exclude_from_search" => false,
+        "map_meta_cap" => true,
+        "hierachical" => true,
+        "rewrite" => ["slug" => "works","with_front"=> true],
+        "query_var" => true,
+        // サイドバーにメニューを表示する位置
+        "menu_position" => 5,
+        "supports" =>["title","editor","thumbnail"],
+      ];
+      register_post_type("works",$args);
+
+    }
+    add_action("init","cpt_register_works");
+
+
+    // カテゴリーを追加
+    function cpt_register_dep(){
+      $labels=[
+        "singular_name" => "dep",
+      ];
+      $args=[
+        "label" => "カテゴリー",
+        "labels" => "$labels",
+        "publicly_queryable" =>true,
+        "hierachical" => true,
+        "show_in_menu" => true,
+        "query_var" => true,
+        "rewrite" => ["slug" => "dep","with_front"=> true],
+        "show_admin_column" => false,
+        "show_in_rest" => true,
+        "rest_base" => "dep",
+        "rest_controller_class" => "WP_REST_Terms_Controller",
+        "show_in_quick_edit" => false,
+      ];
+      register_taxonomy("dep",["works"],$args);
+
+    }
+    add_action("init","cpt_register_dep");
+
 ?>
 

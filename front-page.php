@@ -85,8 +85,16 @@ Works
             <h2>Works</h2>
             <p>制作実績</p>
         </div>
-
+    <?php 
+    $args = array(
+        'post_type' => 'works',
+        'post_per-page' => 6
+    );
+    $the_query = new WP_Query($args);
+    if($the_query->have_posts()):
+    ?>
     <ul>
+        <?php while($the_query->have_posts()): $the_query->the_post(); ?>
         <li>
             <a href="<?php echo esc_url(home_url('/kindergarden/')); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/Top__img/Works_Kindergarden.png" alt="幼稚園サイト画像">
@@ -123,6 +131,7 @@ Works
                 <p>カフェのサイト作成</p>
             </a>
         </li>
+        <?php endwhile; endif; ?>
     </ul>
 
     <div class="button__more">
