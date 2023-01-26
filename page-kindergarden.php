@@ -8,13 +8,19 @@ Works
             <h2>Works</h2>
             <p>制作実績</p>
         </div>
-
+        
+        <?php 
+    $args = array(
+        'post_type' => 'works_sub',
+        'post_per-page' => 1
+    );
+    ?>
     <div class="container">
         <div class="swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/Works__img/Works__Kindergarden01.png" alt="幼稚園サイト スライド画像1"></div>
-                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/Works__img/Works__Kindergarden02.png" alt="幼稚園サイト スライド画像2"></div>
-                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/Works__img/Works__Kindergarden03.png" alt="幼稚園サイト スライド画像3"></div>
+                <div class="swiper-slide"><img src="<?php echo CFS()->get('swiper-img1'); ?>" alt="幼稚園サイト スライド画像1"></div>
+                <div class="swiper-slide"><img src="<?php echo CFS()->get('swiper-img2'); ?>" alt="幼稚園サイト スライド画像2"></div>
+                <div class="swiper-slide"><img src="<?php echo CFS()->get('swiper-img3'); ?>" alt="幼稚園サイト スライド画像3"></div>
             </div>
         </div>
         <div class="swiper-button-prev"></div>
@@ -24,14 +30,13 @@ Works
 
         <dl class="Works__details">
             <dt>URL</dt>
-            <dd><a href="https://xs184754.xsrv.jp/index.html/">https://xs184754.xsrv.jp/index.html/</a></dd>
+            <dd><?php echo CFS()->get('URL'); ?></dd>
             <dt>サイトの概要</dt>
-            <dd>ターゲットは教育内容を重視する親御様を中心としています。幼稚園の教育方針と真摯さを重視するためイラストや装飾を抑え、コーポレートサイトに近い雰囲気にしています。カラフル感を出さないように背景色も白とし、文章をメインにして視覚よりも理論で教育方針を伝えています。
-                JavaScript(jQuery)を使用し、ハンバーガーメニュー、slickを使用したスライドショー、フェードインなどサイトに動きをつけて躍動感を出しました。</dd>
+            <dd><?php echo CFS()->get('description'); ?>。</dd>
             <dt>使用した言語/ツール</dt>
-            <dd>HTML/CSS/JavaScript/Photoshop/</dd>
+            <dd><?php echo CFS()->get('tools'); ?></dd>
             <dt>作業範囲</dt>
-            <dd>デザイン/コーディング</dd>
+            <dd><?php echo CFS()->get('workscop'); ?></dd>
         </dl>
 
     </section>
