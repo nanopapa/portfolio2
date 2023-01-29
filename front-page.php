@@ -96,7 +96,7 @@ Works
     <ul>
         <?php while($the_query->have_posts()): $the_query->the_post(); ?>
         <li>
-            <a href="<?php echo esc_url(home_url('/kindergarden/')); ?>">
+                <a href="<?php the_permalink(); ?>">
                 <img src="<?php echo CFS()->get('works-img'); ?>" alt="幼稚園サイト画像">
                 <p><?php echo CFS()->get('works-name'); ?></p>
             </a>

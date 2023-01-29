@@ -44,8 +44,9 @@ function my_scripts() {
     wp_enqueue_style( 'sub-page', get_template_directory_uri() . '/css/Works__css/Works__subpage.css');
     }elseif(is_home() || is_front_page()){
     wp_enqueue_style( 'style', get_template_directory_uri() .'/style.css');
+    }elseif(is_single()){
+      wp_enqueue_style( 'single-works', get_template_directory_uri() . '/css/Works__css/Works__subpage.css');
     }
-
     wp_enqueue_script('javascript', get_template_directory_uri() . '/javascript/main.js', array(), '1.0', true);
 
 }
@@ -124,62 +125,7 @@ function my_scripts() {
 
 
 
-    // カスタム投稿タイプ
-    function cpt_register_works_sub(){
-      $labels=[
-        "singular_name" => "works_sub",
-        "edit_item" => "works_sub",
-      ];
-      $args=[
-        // サイドバーにworksを追加する
-        "label" => "Works_sub",
-        "labels" => "$labels",
-        "description" => "",
-        "public" => true,
-        "show_in_rest" => true,
-        "rest_base" => "",
-        "rest_controller_class" => "WP_REST_Posts_Controller",
-        "has_archive" => true,
-        "delete_with_user" => false,
-        "exclude_from_search" => false,
-        "map_meta_cap" => true,
-        "hierachical" => true,
-        "rewrite" => ["slug" => "works_sub","with_front"=> true],
-        "query_var" => true,
-        // サイドバーにメニューを表示する位置
-        "menu_position" => 5,
-        "supports" =>["title","editor","thumbnail"],
-      ];
-      register_post_type("works_sub",$args);
-
-    }
-    add_action("init","cpt_register_works_sub");
-
-
-    // カテゴリーを追加
-    function cpt_register_dep2(){
-      $labels=[
-        "singular_name" => "dep2",
-      ];
-      $args=[
-        "label" => "カテゴリー",
-        "labels" => "$labels",
-        "publicly_queryable" =>true,
-        "hierachical" => true,
-        "show_in_menu" => true,
-        "query_var" => true,
-        "rewrite" => ["slug" => "dep2","with_front"=> true],
-        "show_admin_column" => false,
-        "show_in_rest" => true,
-        "rest_base" => "dep2",
-        "rest_controller_class" => "WP_REST_Terms_Controller",
-        "show_in_quick_edit" => false,
-      ];
-      register_taxonomy("dep2",["works_sub"],$args);
-
-    }
-    add_action("init","cpt_register_dep2");
-
+  
     function change_posts_per_page($query) {
       if ( is_admin() || ! $query->is_main_query() )
           return;
